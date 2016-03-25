@@ -1,0 +1,2 @@
+<Navbar
+  title={"Title"} />
