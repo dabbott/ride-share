@@ -1,0 +1,121 @@
+{
+	"liveValues": [
+		{
+			"range": {
+				"from": {
+					"line": 2,
+					"ch": 9
+				},
+				"to": {
+					"line": 2,
+					"ch": 12
+				}
+			},
+			"editWith": "inputField",
+			"type": "string",
+			"name": "Value"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 3,
+					"ch": 15
+				},
+				"to": {
+					"line": 3,
+					"ch": 35
+				}
+			},
+			"editWith": "colorPicker",
+			"type": "string",
+			"name": "ActiveColor"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 4,
+					"ch": 16
+				},
+				"to": {
+					"line": 4,
+					"ch": 37
+				}
+			},
+			"editWith": "colorPicker",
+			"type": "string",
+			"name": "DefaultColor"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 5,
+					"ch": 14
+				},
+				"to": {
+					"line": 5,
+					"ch": 35
+				}
+			},
+			"editWith": "colorPicker",
+			"type": "string",
+			"name": "ActiveText"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 6,
+					"ch": 15
+				},
+				"to": {
+					"line": 6,
+					"ch": 30
+				}
+			},
+			"editWith": "colorPicker",
+			"type": "string",
+			"name": "DefaultText"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 7,
+					"ch": 15
+				},
+				"to": {
+					"line": 7,
+					"ch": 16
+				}
+			},
+			"type": "number",
+			"name": "BorderWidth"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 8,
+					"ch": 16
+				},
+				"to": {
+					"line": 8,
+					"ch": 17
+				}
+			},
+			"type": "number",
+			"name": "BorderRadius"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 9,
+					"ch": 11
+				},
+				"to": {
+					"line": 9,
+					"ch": 12
+				}
+			},
+			"type": "number",
+			"name": "Padding"
+		}
+	]
+}

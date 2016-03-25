@@ -1,0 +1,19 @@
+{
+	"liveValues": [
+		{
+			"range": {
+				"from": {
+					"line": 1,
+					"ch": 9
+				},
+				"to": {
+					"line": 1,
+					"ch": 16
+				}
+			},
+			"editWith": "inputField",
+			"type": "string",
+			"name": "Title"
+		}
+	]
+}

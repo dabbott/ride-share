@@ -1,0 +1,77 @@
+{
+	"liveValues": [
+		{
+			"range": {
+				"from": {
+					"line": 1,
+					"ch": 8
+				},
+				"to": {
+					"line": 1,
+					"ch": 10
+				}
+			},
+			"editWith": "inputField",
+			"type": "string",
+			"name": "Text"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 2,
+					"ch": 12
+				},
+				"to": {
+					"line": 2,
+					"ch": 31
+				}
+			},
+			"editWith": "colorPicker",
+			"type": "string",
+			"name": "PinColor"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 3,
+					"ch": 13
+				},
+				"to": {
+					"line": 3,
+					"ch": 34
+				}
+			},
+			"editWith": "colorPicker",
+			"type": "string",
+			"name": "TextColor"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 4,
+					"ch": 7
+				},
+				"to": {
+					"line": 4,
+					"ch": 8
+				}
+			},
+			"type": "number",
+			"name": "Top"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 5,
+					"ch": 8
+				},
+				"to": {
+					"line": 5,
+					"ch": 9
+				}
+			},
+			"type": "number",
+			"name": "Left"
+		}
+	]
+}

@@ -1,0 +1,92 @@
+{
+	"liveValues": [
+		{
+			"range": {
+				"from": {
+					"line": 2,
+					"ch": 10
+				},
+				"to": {
+					"line": 2,
+					"ch": 11
+				}
+			},
+			"type": "number",
+			"name": "Margin"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 3,
+					"ch": 13
+				},
+				"to": {
+					"line": 3,
+					"ch": 18
+				}
+			},
+			"type": "boolean",
+			"name": "ShowLabel"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 4,
+					"ch": 13
+				},
+				"to": {
+					"line": 4,
+					"ch": 26
+				}
+			},
+			"editWith": "inputField",
+			"type": "string",
+			"name": "LabelText"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 5,
+					"ch": 15
+				},
+				"to": {
+					"line": 5,
+					"ch": 37
+				}
+			},
+			"editWith": "inputField",
+			"type": "string",
+			"name": "DefaultText"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 6,
+					"ch": 14
+				},
+				"to": {
+					"line": 6,
+					"ch": 33
+				}
+			},
+			"editWith": "colorPicker",
+			"type": "string",
+			"name": "LabelColor"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 7,
+					"ch": 13
+				},
+				"to": {
+					"line": 7,
+					"ch": 28
+				}
+			},
+			"editWith": "colorPicker",
+			"type": "string",
+			"name": "TextColor"
+		}
+	]
+}
