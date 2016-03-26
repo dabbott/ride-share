@@ -7,7 +7,7 @@ var {
   TouchableOpacity,
 } = React
 
-class LocationPicker extends React.Component {
+class LocationPin extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -67,4 +67,4 @@ class LocationPicker extends React.Component {
   }
 }
 
-module.exports = LocationPicker
+module.exports = LocationPin

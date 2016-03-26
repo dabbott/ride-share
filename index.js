@@ -1,7 +1,5 @@
-module.exports = {
-	Navbar: require('./components/Navbar'),
-	LocationPin: require('./components/LocationPin'),
-	LocationSearchbox: require('./components/LocationSearchbox'),
-	FullscreenMap: require('./components/FullscreenMap'),
-	ToggleButton: require('./components/ToggleButton'),
-}
+export const Navbar = require('./components/Navbar')
+export const LocationPin = require('./components/LocationPin')
+export const LocationSearchbox = require('./components/LocationSearchbox')
+export const FullscreenMap = require('./components/FullscreenMap')
+export const ToggleButton = require('./components/ToggleButton')
