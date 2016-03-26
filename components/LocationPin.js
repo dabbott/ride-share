@@ -67,4 +67,4 @@ class LocationPin extends React.Component {
   }
 }
 
-module.exports = LocationPin
+export default LocationPin

@@ -1,5 +1,11 @@
-export const Navbar = require('./components/Navbar')
-export const LocationPin = require('./components/LocationPin')
-export const LocationSearchbox = require('./components/LocationSearchbox')
-export const FullscreenMap = require('./components/FullscreenMap')
-export const ToggleButton = require('./components/ToggleButton')
+import _Navbar from './components/Navbar'
+import _LocationPin from './components/LocationPin'
+import _LocationSearchbox from './components/LocationSearchbox'
+import _FullscreenMap from './components/FullscreenMap'
+import _ToggleButton from './components/ToggleButton'
+
+export const Navbar = _Navbar
+export const LocationPin = _LocationPin
+export const LocationSearchbox = _LocationSearchbox
+export const FullscreenMap = _FullscreenMap
+export const ToggleButton = _ToggleButton

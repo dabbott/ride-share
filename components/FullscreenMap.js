@@ -34,4 +34,4 @@ class Map extends React.Component {
   }
 }
 
-module.exports = Map
+export default Map

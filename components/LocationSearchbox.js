@@ -67,4 +67,4 @@ class LocationSearchbox extends React.Component {
   }
 }
 
-module.exports = LocationSearchbox
+export default LocationSearchbox
