@@ -16,17 +16,17 @@ class Navbar extends React.Component {
       height: 65,
       backgroundColor: 'white',
       borderBottomWidth: 1,
-      borderColor:  "rgba(207,207,207,1)" ,
+      borderColor: "rgba(207,207,207,1)",
       justifyContent: 'center',
       alignItems: 'center',
     }
     let textStyle = {
-      fontSize:  14 ,
-      fontWeight:  "700" 
+      fontSize: 14,
+      fontWeight: "700"
     }
     return (
       <View style={style}>
-        <Text style={textStyle}>{ "Youber" }</Text>
+        <Text style={textStyle}>{this.props.title || "Title"}</Text>
       </View>
     )
   }

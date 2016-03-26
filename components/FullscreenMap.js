@@ -11,6 +11,13 @@ class Map extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
+    this.handleRegionChange = this.handleRegionChange.bind(this)
+  }
+  handleRegionChange(region) {
+    let lat = region.latitude
+    let lon = region.longitude
+    let latlng = lat + ',' + lon
+    this.props.onLatlngChange && this.props.onLatlngChange(latlng)
   }
   render() {
     let style = {
@@ -28,7 +35,15 @@ class Map extends React.Component {
     return (
       <View style={style}>
         <MapView style={mapStyle}
-          showsUserLocation={true} />
+          onRegionChange={this.handleRegionChange}
+          minDelta={0.01}
+          maxDelta={0.02}
+          showsUserLocation={true}
+          scrollEnabled={this.props.scroll}
+          zoomEnabled={this.props.zoom}
+          pitchEnabled={this.props.pitch}
+          rotationEnabled={this.props.rotate}
+          {...this.props} />
       </View>
     )
   }

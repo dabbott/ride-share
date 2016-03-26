@@ -13,6 +13,7 @@ class LocationPin extends React.Component {
     this.state = {}
   }
   render() {
+    let backgroundColor = this.props.pinColor || "rgba(0,154,255,1)"
     let screenStyle = {
       height: 0,
       width: 0,
@@ -28,26 +29,27 @@ class LocationPin extends React.Component {
       alignItems: "center",
       flex: 1,
     }
-    let top = -19 + Dimensions.get('window').height / 2
-    let left =  0 
+    let top = -19 + Dimensions.get('window').height / 2 +  + (this.props.top || 0)
+    let left = 0 + (this.props.left || 0)
     let style = {
-      borderRadius:  21 ,
-      backgroundColor:  "rgba(21,21,36,1)" ,
+      borderRadius: 21,
+      backgroundColor: backgroundColor,
       left: left,
       top: top,
+      height: 41,
     }
     let textStyle = {
-      fontSize:  20 ,
-      color:  'white' ,
+      fontSize: 20,
+      color: this.props.textColor || 'white',
       backgroundColor: "transparent",
-      paddingVertical:  8 ,
-      paddingHorizontal:  21 ,
-      fontWeight:  "300" ,
+      paddingVertical: 8,
+      paddingHorizontal: 21,
+      fontWeight: "300",
     }
     let nubStyle = {
-      width:  3 ,
-      height:  20 ,
-      backgroundColor: 'black',
+      width: 3,
+      height: 20,
+      backgroundColor: backgroundColor,
       top: top,
       left: left,
     }
@@ -57,8 +59,8 @@ class LocationPin extends React.Component {
         <View style={innerStyle}>
           <TouchableOpacity style={style}
             onPress={this.props.onPress}
-            activeOpacity={ 75  / 100}>
-            <Text style={textStyle}>{ "SET LOCATION" }</Text>
+            activeOpacity={75 / 100}>
+            <Text style={textStyle}>{this.props.text || ""}</Text>
           </TouchableOpacity>
           <View style={nubStyle}></View>
         </View>

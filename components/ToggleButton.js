@@ -12,52 +12,71 @@ class ToggleButton extends React.Component {
     this.state = {}
   }
   render() {
-    let margin = 4
+    let margin = this.props.padding
+    let borderWidth = this.props.borderWidth
     let style = {
       flexDirection: 'row',
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor:  "rgba(245,245,245,1)" ,
+      backgroundColor: "rgba(245,245,245,1)",
       paddingRight: margin,
       paddingVertical: margin,
-      borderTopWidth: 1,
-      borderBottomWidth: 1,
-      borderColor:  "rgba(214,214,214,1)" ,
+      borderTopWidth: borderWidth,
+      borderBottomWidth: borderWidth,
+      borderColor: "rgba(214,214,214,1)",
     }
     let buttonStyle = {
       flex: 1,
-      backgroundColor: 'white',
-      borderRadius:  2 ,
+      backgroundColor: this.props.defaultColor,
+      borderRadius: this.props.borderRadius,
       marginLeft: margin,
-      borderWidth: 1,
-      borderColor:  "rgba(220,220,220,1)" ,
+      borderWidth: borderWidth,
+      borderColor: "rgba(224,224,224,1)",
     }
     let textStyle = {
-      fontSize:  11 ,
+      fontSize: 11,
       textAlign: 'center',
       backgroundColor: 'transparent',
-      padding:  8 ,
-      fontWeight:  "600" ,
-      color:  "rgba(107,107,118,1)" ,
+      padding: 8,
+      fontWeight: "600",
+      color: this.props.defaultText,
     }
+    let backgroundColor = this.props.activeColor
     let buttonActiveStyle = {
-      backgroundColor:  "rgba(31,172,199,1)" ,
-      borderWidth: 0,
+      backgroundColor: backgroundColor,
+      borderColor: backgroundColor,
+      borderWidth: borderWidth,
     }
     let textActiveStyle = {
-      color:  "rgba(255,255,255,1)" ,
+      color: this.props.activeText,
     }
+    let options = this.props.options.map((option, i) => {
+      if (option === this.props.value) {
+        return (
+          <TouchableOpacity key={i} 
+            style={[buttonStyle, buttonActiveStyle]}>
+            <Text style={[textStyle, textActiveStyle]}>{option}</Text>
+          </TouchableOpacity>
+        )
+      } else {
+        return (
+          <TouchableOpacity key={i} 
+            style={buttonStyle}>
+            <Text style={textStyle}>{option}</Text>
+          </TouchableOpacity>
+        )
+      }
+    })
     return (
       <View style={[style, this.props.style]}>
-        <TouchableOpacity style={[buttonStyle, buttonActiveStyle]}>
-          <Text style={[textStyle, textActiveStyle]}>{'youberX'}</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={buttonStyle}>
-          <Text style={textStyle}>{'youberXL'}</Text>
-        </TouchableOpacity>
+        {options}
       </View>
     )
   }
+}
+
+ToggleButton.defaultProps = {
+  options: [],
 }
 
 export default ToggleButton
