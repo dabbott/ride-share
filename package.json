@@ -1,5 +1,5 @@
 {
-  "name": "ride-share",
+  "name": "deco-ride-share-demo",
   "version": "1.0.0",
   "description": "React Native components for a ride-sharing app.",
   "main": "index.js",
