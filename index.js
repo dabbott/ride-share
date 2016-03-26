@@ -9,3 +9,7 @@ export const LocationPin = _LocationPin
 export const LocationSearchbox = _LocationSearchbox
 export const FullscreenMap = _FullscreenMap
 export const ToggleButton = _ToggleButton
+
+if (module.hot) {
+  module.hot.acceptCallback = () => {}
+}
