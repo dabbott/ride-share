@@ -67,10 +67,4 @@ class LocationSearchbox extends React.Component {
   }
 }
 
-// if (__name__ == '__main__') {
-//   LocationSearchbox.defaultProps = {
-//     style: {marginTop: 20, backgroundColor: 'teal', margin: 20,}
-//   }
-// }
-
 module.exports = LocationSearchbox

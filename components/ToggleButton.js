@@ -60,10 +60,4 @@ class ToggleButton extends React.Component {
   }
 }
 
-if (__name__ == '__main__') {
-  ToggleButton.defaultProps = {
-    style: {marginTop: 20}
-  }
-}
-
 module.exports = ToggleButton
