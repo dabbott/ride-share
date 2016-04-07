@@ -1,6 +1,12 @@
-var {Component, Text, View} = require('react-native')
+import React, {
+  Component, 
+  Text, 
+  View,
+  AppRegistry,
+  StyleSheet,
+} from 'react-native'
 
-class Index extends Component {
+class Uber extends Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -21,4 +27,4 @@ class Index extends Component {
   }
 }
 
-module.exports = Index
+AppRegistry.registerComponent('Project', () => Uber)

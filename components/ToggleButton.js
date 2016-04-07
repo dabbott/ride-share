@@ -51,21 +51,14 @@ class ToggleButton extends React.Component {
       color: this.props.activeText,
     }
     let options = this.props.options.map((option, i) => {
-      if (option === this.props.value) {
-        return (
-          <TouchableOpacity key={i} 
-            style={[buttonStyle, buttonActiveStyle]}>
-            <Text style={[textStyle, textActiveStyle]}>{option}</Text>
-          </TouchableOpacity>
-        )
-      } else {
-        return (
-          <TouchableOpacity key={i} 
-            style={buttonStyle}>
-            <Text style={textStyle}>{option}</Text>
-          </TouchableOpacity>
-        )
-      }
+      const active = option === this.props.value
+      return (
+        <TouchableOpacity key={i} 
+          onPress={this.props.onChange.bind(this, option)}
+          style={active ? [buttonStyle, buttonActiveStyle] : buttonStyle}>
+          <Text style={active ? [textStyle, textActiveStyle] : textStyle}>{option}</Text>
+        </TouchableOpacity>
+      )
     })
     return (
       <View style={[style, this.props.style]}>
@@ -77,6 +70,7 @@ class ToggleButton extends React.Component {
 
 ToggleButton.defaultProps = {
   options: [],
+  onChange: () => {},
 }
 
 export default ToggleButton
