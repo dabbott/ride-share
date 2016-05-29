@@ -7,29 +7,5 @@
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "author": "Devin Abbott",
-  "license": "MIT",
-  "deco": {
-    "components": [
-      {
-        "name": "Toggle Button 2",
-        "publisher": "dabbott",
-        "schemaVersion": "0.0.2-beta",
-        "tags": ["core", "ui", "react-native"],
-        "description": "A better, more flexible Toggle Button.",
-        "inspector": {
-          "group": "TOGGLE BUTTON"
-        },
-        "template": {
-          "text": "./templates/Toggle.jsx",
-          "metadata": "./.deco/templates/Toggle.jsx.deco"
-        },
-        "imports": {
-          "./index.js": [
-            "ToggleContainer",
-            "ToggleItem"
-          ]
-        }
-      }
-    ]
-  }
+  "license": "MIT"
 }
